@@ -17,7 +17,7 @@ jobs:
         run: npm run build
 
       - name: Deploy
-        uses: lbertenasco/s3-deploy@v1
+        uses: lbertenasco/s3-deploy@v1.2.4
         with:
           folder: dist/angular-frontend
           bucket: ${{ secrets.S3_BUCKET }}
